@@ -2,7 +2,7 @@
 import asyncio
 from aiogram import Bot, Dispatcher
 import yaml
-#from .features import example
+from .features import dice
 
 
 # load config.yaml
@@ -18,13 +18,15 @@ def main():
 #run bot
 
 async def run():
-    bot = Bot(token=load_config()["bot"]["token"])
+    config = load_config()
+
+    bot = Bot(token=config["bot"]["token"])
     dp = Dispatcher()
     dp["config"] = config
-
+    
 #features
 
-#dp.include_router(example.router)
+    dp.include_router(dice.router)
 
 
 
