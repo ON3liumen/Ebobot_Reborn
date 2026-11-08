@@ -4,12 +4,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "Alex Nesteruk", email = "Vilexma@gmail.com" }
+    { name = "Alex Nesteruk", email = "Vilexma@gmail.com" },
+    { name = "Andrii Lapytskyi"}
 ]
 requires-python = ">=3.10"
 dependencies = [
     "aiogram>=3.31.0",
-    "asyncio>=4.0.0",
     "pyyaml>=6.0.3",
 ]
 
